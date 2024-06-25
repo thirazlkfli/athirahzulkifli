@@ -1,0 +1,77 @@
+/* Style for the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #79c277;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: rgb(160, 218, 133);
+}
+
+.topnav a.active {
+    background-color: #78ce7b;
+    color: white;
+}
+
+/* Style for the title section */
+.title-section {
+    padding: 20px;
+    text-align: center;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #cccccc27;
+}
+
+.title-section h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+/* General content styling */
+.content {
+    padding: 20px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social img {
+    width: 150px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-radius: 8px;
+}
+
+.social img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 0 0 10px 0;
+    }
+
+    .social {
+        flex-direction: column;
+    }
+
+    .social img {
+        width: 100px;
+    }
+}
+

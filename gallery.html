@@ -1,0 +1,181 @@
+<html>
+  <head>
+    <title>My gallery section</title>
+    <link href="image/green coqquete.jpeg" rel="icon">
+    <title>Webpage with Top Navigation and Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <!-- Top Navigation -->
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="biodata.html">About Me</a>
+        <a href="contact.html">Contact</a>
+        <a href="gallery.html">Gallery</a>
+    </div>
+
+
+</body>
+
+
+  </head>
+  
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+<body>
+  <audio hidden="true" controls autoplay>
+    <source type="audio/mp3" src="audio/TXT - Our Summer (Instrumental).mp3">
+</audio>
+<!--Title section-->
+<div class="title section"></div>
+  <center>
+      <h1 style="font-family:Georgia, 'Times New Roman', Times, serif;color:white;">Heartstrings Collection</h1>
+      <h3 style="font-family: 'Times New Roman', Times, serif; color:aliceblue">"Welcome to my photo collection, titled 'Heartsrting Collection.' This collection captures quiet and 
+        profound moments from everyday life and memories. Each photograph is carefully chosen to evoke 
+        a sense of tranquility and introspection, inviting viewers to pause and reflect on the beauty found 
+        in ordinary moments.</h3>
+      </center>
+   
+
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="image/1 am.jpg" style="width:100%">
+    <img src="image/9 elya birthday.jpg" style="width:100%">
+    <img src="image/along.jpg" style="width:100%">
+    <img src="image/annan.jpg" style="width:100%">
+    <img src="image/txt.jpg" style="width:100%">
+    <img src="image/izzat.jpg" style="width:100%">
+    <img src="image/csr.jpg" style="width: 100%">
+  </div>
+  <div class="column">
+    <img src="image/wanie.jpg" style="width:100%">
+    <img src="image/uitm dihati.jpg" style="width:100%">
+    <img src="image/comot.jpg" style="width:100%">
+    <img src="image/trius.JPG" style="width:100%">
+    <img src="image/trius 2.0.JPG" style="width:100%">
+    <img src="image/tritwo.JPG" style="width:100%">
+    <img src="image/izham n me.jpg" style="width:100%">
+    <img src="image/lawatan arkib.jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="image/1 am.jpg" style="width:100%">
+    <img src="image/treasure.jpg" style="width:100%">
+    <img src="image/tasya.jpg" style="width:100%">
+    <img src="image/sunset.jpg" style="width:100%">
+    <img src="image/seventeen.jpg" style="width:100%">
+    <img src="image/sunflawe.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="image/main beem.jpg" style="width:100%">
+    <img src="image/Enhypen.jpg" style="width:100%">
+    <img src="image/pd after present.jpg" style="width:100%">
+    <img src="image/puncak alam trip.JPG" style="width:100%">
+    <img src="image/raya 23.jpg" style="width:100%">
+    <img src="image/jagiyas.jpg" style="width:100%">
+    <img src="image/mandi sungai.jpg" style="width:100%">
+  </div>
+</div>
+
+
+<hr size="5" color="white" width="100%" </hr>
+
+<div style="text-align:center"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+  <video id="video1" width="420">
+    <source src="video/terengganu trip.MOV" type="video/mp4">
+    <source src="video/terengganu trip.MOV" type="video/ogg">
+    Your browser does not support HTML video.
+  </video>
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 560; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 420; 
+} 
+</script> 
+
+
+<body style="background-color:rgba(132, 206, 132, 0.966);"
+     </body>
+
+
+
+</body>
+</html>
